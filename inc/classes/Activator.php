@@ -14,7 +14,6 @@ class Activator extends AbstractBase
 	public function init(): void
 	{
 		$this->getLoader()->add_action('after_switch_theme', $this, 'isActive');
-		$this->getLoader()->add_action('tgmpa_register', $this, 'registerRequiredPlugins');
 	}
 
 	public function isActive(): void
@@ -31,58 +30,6 @@ class Activator extends AbstractBase
 	protected function active(): void
 	{
 		//
-	}
-
-	public function registerRequiredPlugins(): void
-	{
-		$gitlabUpdater = $this->getGithubRepoData('otzi122', 'wp-gitlab-updater');
-
-		$plugins[] = [
-			'name'             => 'Gitlab Updater',
-			'slug'             => 'gitlab-updater',
-			'source'           => $gitlabUpdater['source']  ?? '#',
-			'version'          => $gitlabUpdater['version'] ?? 'Error',
-			'required'         => false,
-			'force_activation' => false,
-		];
-
-		if (! class_exists('acf'))
-		{
-			$plugins[] = [
-				'name'     => 'Advanced Custom Fields',
-				'slug'     => 'advanced-custom-fields',
-				'required' => false,
-			];
-		}
-
-		$plugins[] = [
-			'name'             => 'Login with Google',
-			'slug'             => 'login-with-google',
-			'required'         => false,
-			'force_activation' => false,
-		];
-
-		$plugins[] = [
-			'name'             => 'iThemes Security',
-			'slug'             => 'better-wp-security',
-			'required'         => false,
-			'force_activation' => false,
-		];
-
-		$config = [
-			'id'           => 'clazzy-child-theme',
-			'default_path' => '',
-			'menu'         => 'tgmpa-install-plugins',
-			'parent_slug'  => 'themes.php',
-			'capability'   => 'edit_theme_options',
-			'has_notices'  => true,
-			'dismissable'  => true,
-			'dismiss_msg'  => '',
-			'is_automatic' => true,
-			'message'      => '',
-		];
-
-		tgmpa($plugins, $config);
 	}
 
 	public function getGithubRepoData(string $owner, string $repo): array
