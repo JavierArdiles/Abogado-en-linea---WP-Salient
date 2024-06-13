@@ -1,0 +1,38 @@
+version: '3.7'
+
+services:
+  wp:
+    volumes:
+      - ./:/wordpress/
+    build:
+      context: .
+      dockerfile: ./.docker/php/Dockerfile
+      args:
+        WORDPRESS_DB_PASSWORD: $DB_PASS
+        PHP_IMAGE_TAG: $PHP_IMAGE_TAG
+        WORDPRESS_VERSION: $WORDPRESS_VERSION
+    image: $CI_IMAGE_NAME:$CI_IMAGE_TAG 
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  mysql:
+    image: mariadb:10.4
+    restart: always
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=${DB_PASS} --execute \"SHOW DATABASES;\""
+      interval: 3s
+      timeout: 1s
+      retries: 5
+    environment:
+      MYSQL_ROOT_PASSWORD: $DB_PASS
+
+  dozzle:
+    image: amir20/dozzle:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - '8001:8080'
+    depends_on:
+      mysql:
+        condition: service_healthy

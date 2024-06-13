@@ -1,0 +1,84 @@
+variables:
+  DB_HOSTNAME: mariadb
+  MYSQL_USER: root
+  MYSQL_DATABASE: wordpress_tests
+  MYSQL_ROOT_PASSWORD: mysql
+  CI_IMAGE_NAME: $CI_IMAGE_NAME
+  CI_IMAGE_TAG: $CI_IMAGE_TAG
+
+# Our stages
+stages:
+  - test
+
+lint:
+  stage: test
+  image: $CI_IMAGE_NAME:$CI_IMAGE_TAG
+  before_script:
+    - cp .docker/php.ini /usr/local/etc/php/php.ini
+    - composer install --no-interaction
+  script: composer lint:check
+  only:
+    - master
+    - develop
+    - merge_requests
+
+php80:
+  stage: test
+  image: $CI_IMAGE_NAME:$CI_IMAGE_TAG 
+  services:
+    - mariadb:10.4
+  before_script:
+    - cp .docker/php.ini /usr/local/etc/php/php.ini
+    - git clone https://github.com/xdebug/xdebug.git ./xdebug 
+    - cd xdebug 
+    - sh ./rebuild.sh 
+    - docker-php-source extract 
+    - docker-php-ext-enable mysqli pdo_mysql xdebug
+    - docker-php-source delete 
+    - cd .. && rm -fr ./xdebug
+    - composer install --no-interaction
+    - chmod +x ./bin/install-wp-tests.sh
+    - ./bin/install-wp-tests.sh wordpress_test root $MYSQL_ROOT_PASSWORD mariadb $WORDPRESS_VERSION
+    - curl -L https://github.com/vishnubob/wait-for-it/raw/master/wait-for-it.sh > ./wait-for-it.sh
+    - chmod +x ./wait-for-it.sh
+    - chmod +x ./bin/install-db.sh
+    - ./wait-for-it.sh mariadb:3306 -- bin/install-db.sh wordpress_test root $MYSQL_ROOT_PASSWORD mariadb
+  script:
+    - vendor/bin/phpunit --colors=never --debug
+  needs:
+    - lint
+  artifacts:
+    when: always
+    paths:
+      - reports/coverage.cobertura.xml
+      - reports/report.junit.xml
+    reports:
+      junit: reports/report.junit.xml
+      cobertura: reports/coverage.cobertura.xml
+  coverage: '/^\s*Lines:\s*\d+.\d+\%/'
+  only:
+    - master
+    - develop
+    - merge_requests
+
+quality check:
+  stage: test
+  image: 
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script:
+    - sonar-scanner -X
+  needs:
+    - php80
+  allow_failure: true
+  only:
+    - master
+    - develop
+    - merge_requests

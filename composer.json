@@ -1,0 +1,52 @@
+{
+    "name": "amalgama/child_theme",
+    "description": "Wordpress Child Theme",
+    "type": "wordpress-theme",
+    "keywords": [
+        "WordPress",
+        "Theme"
+    ],
+    "homepage": "https://github.com/Automattic/_s",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Amalgama",
+            "homepage": "https://amalgama.co"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.4",
+        "friendsofphp/php-cs-fixer": "^3.3",
+        "phpstan/phpstan": "^1.4",
+        "szepeviktor/phpstan-wordpress": "^1.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1.3",
+		"yoast/phpunit-polyfills": "^1.0.1",
+        "phpunit/phpunit": "^9.6",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClazzyStudioChildTheme\\": "inc/classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Foo\\Bar\\": "tests/Assets/FooClasses",
+            "ClazzyStudioChildTheme\\DemoClasses\\": "tests/Assets/DemoClasses" 
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "phpunit": "phpunit",
+        "lint": "./vendor/bin/php-cs-fixer fix -vvv --show-progress=dots",
+        "lint:check": "./vendor/bin/php-cs-fixer fix --dry-run --verbose",
+        "check": [
+            "@lint:check",
+            "@phpunit"
+        ]
+    }
+}

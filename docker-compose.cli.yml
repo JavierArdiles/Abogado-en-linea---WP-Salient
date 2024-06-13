@@ -1,0 +1,63 @@
+version: '3.7'
+x-basic: &basic
+  build:
+    context: .
+    dockerfile: ./.docker/php/Dockerfile
+    args:
+      WORDPRESS_DB_PASSWORD: $DB_PASS
+      PHP_IMAGE_TAG: $PHP_IMAGE_TAG
+      WORDPRESS_VERSION: $WORDPRESS_VERSION
+  image: $CI_IMAGE_NAME:$CI_IMAGE_TAG 
+  init: true
+  user: root
+
+x-php: &php
+  <<: *basic
+  volumes:
+    - ./:/wordpress/
+    - .docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+    #- ~/.ssh:/home/docker/.ssh
+    - composer-cache:/root/.composer/cache
+    - npm-cache:/root/.npm/
+
+x-javascript: &javascript
+  build:
+    context: .
+    dockerfile: ./.docker/js/Dockerfile
+  init: true
+  user: root
+  volumes:
+    - ./:/var/www/html
+    - composer-cache:/root/.composer/cache
+    - npm-cache:/root/.npm/
+services:
+  pu:
+    <<: *php
+    entrypoint: ["vendor/bin/phpunit"]
+  bash: 
+    <<: *php
+    entrypoint: ["/bin/bash"]
+  composer:
+    <<: *php
+    entrypoint: ["composer"]
+  php:
+    <<: *php
+    entrypoint: ["php"]
+  npm:
+    <<: *javascript
+    entrypoint: ["npm"]
+  npx:
+    <<: *javascript
+    entrypoint: ["npx"]
+  yarn:
+    <<: *javascript
+    entrypoint: ["yarn"]
+  wp:
+    <<: *basic
+    volumes:
+    - ./../../../:/var/www/html
+    entrypoint: ["wp", "--allow-root"]
+
+volumes:
+  composer-cache: {}
+  npm-cache: {}

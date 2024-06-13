@@ -1,0 +1,425 @@
+# <!=Copyright (C) 2023 ClazzyStudio Team
+# This file is distributed under the same license as the Clazzy Child Theme for Clazzystudio package.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Clazzy Child Theme for Clazzystudio 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/html\n"
+"POT-Creation-Date: 2023-03-19 18:24:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: inc/classes/Admin.php:41
+msgid "Error: you need to set the Demo Value."
+msgstr ""
+
+#: inc/classes/Admin.php:60
+msgid "Child Theme Settings"
+msgstr ""
+
+#: inc/classes/Admin.php:61
+msgid "Child Theme Options"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:339
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:340
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:342
+#. translators: %s: plugin name.
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:344
+#. translators: %s: plugin name.
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:345
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:382
+#. translators: 1: plugin name(s).
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:387
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:392
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:398
+#: inc/plugins/TGM_Plugin_Activation.php:981
+#: inc/plugins/TGM_Plugin_Activation.php:2924
+#: inc/plugins/TGM_Plugin_Activation.php:4072
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:399
+#: inc/plugins/TGM_Plugin_Activation.php:3620
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:400
+#: inc/plugins/TGM_Plugin_Activation.php:3397
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:402
+#. translators: 1: plugin name.
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:404
+#. translators: 1: plugin name.
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:406
+#. translators: 1: dashboard link.
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:407
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:408
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:409
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:639
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:640
+msgid "Update Required"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:766
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:1110
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:1110
+#: inc/plugins/TGM_Plugin_Activation.php:1114
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:1114
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2311
+#. translators: %s: version number
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2636
+msgid "Required"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2639
+msgid "Recommended"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2657
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2660
+msgid "External Source"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2663
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2682
+msgid "Not Installed"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2687
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2691
+msgid "Active"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2698
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2702
+msgid "Requires Update"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2706
+msgid "Update recommended"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2772
+#. translators: 1: number of plugins.
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2776
+#. translators: 1: number of plugins.
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2780
+#. translators: 1: number of plugins.
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2876
+msgid "Installed version:"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2885
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2899
+msgid "Available version:"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2924
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2939
+msgid "Plugin"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2940
+msgid "Source"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2941
+msgid "Type"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2946
+msgid "Version"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2947
+msgid "Status"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2999
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3007
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3014
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3089
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3126
+msgid "Install"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3134
+msgid "Update"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3138
+msgid "Activate"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3173
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3177
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3227
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3231
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3346
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3376
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3619
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3979
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3984
+#. translators: 1: plugin name, 2: error message.
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3986
+#. translators: 1: plugin name.
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3991
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3993
+#. translators: 1: plugin name.
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3993
+#: inc/plugins/TGM_Plugin_Activation.php:4003
+msgid "Show Details"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3993
+#: inc/plugins/TGM_Plugin_Activation.php:4003
+msgid "Hide Details"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3994
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:3996
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:4001
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:4003
+#. translators: 1: plugin name.
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:4004
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:4006
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Clazzy Child Theme for Clazzystudio"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://amalgama.co"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This is a custom child theme for Clazzy Project"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ClazzyStudio Team"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://clazzystudio.com"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:1341
+#: inc/plugins/TGM_Plugin_Activation.php:3393
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2716
+#. translators: 1: install status, 2: update status
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2768
+#. translators: 1: number of plugins.
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/TGM_Plugin_Activation.php:2867
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""

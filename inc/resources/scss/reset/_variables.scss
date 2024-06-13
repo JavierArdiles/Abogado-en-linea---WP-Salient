@@ -1,0 +1,46 @@
+$black: #000000;
+$white: #FFFFFF;
+
+$primaryColor: #1B2551;
+$primaryColor300: #7C95EF;
+$primaryColor200: #A7B9F4;
+
+$accentColor: #244FE4;
+
+$secondaryColor: #10DDD2;
+$secondaryColor600: #099F97;
+$secondaryColor500: #0DB1A8;
+$secondaryColor25: #eefaf9;
+
+$neutralColor800: #383838;
+$neutralColor700: #5C5C5C;
+$neutralColor300: #eeeeee;
+$neutralColor200: #F3F3F3;
+$neutralColor50: #fdfdfd;
+
+$errorColor: #E51D41;
+$successColor: #00955F;
+
+$primaryFont: 'Ubuntu', sans-serif;
+$secondaryFont: 'Montserrat', sans-serif;
+
+.primary-font {
+    font-family: $primaryFont;
+}
+
+.secondary-font {
+    font-family: $secondaryFont;
+}
+
+// Screen sizes
+// Extra small screen / phone
+$xs: 480px;
+
+// Small screen / tablet
+$sm: 768px;
+
+// Medium screen / desktop
+$md: 1000px;
+
+// Large screen / wide desktop
+$lg: 1200px;
