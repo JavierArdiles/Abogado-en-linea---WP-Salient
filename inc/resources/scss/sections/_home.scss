@@ -1,0 +1,112 @@
+.home {
+  &__hero {
+    &__title {
+      max-width: 474px;
+    }
+
+    .nectar-text-inline-images {
+      &__inner {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75px;
+
+        @include respond-to($md) {
+          text-align: center;
+          justify-content: center;
+        }
+
+        &::after {
+          content: "";
+          margin-left: 8px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #00fb0c;
+        }
+      }
+
+      &__marker {
+        border: 3px solid $white;
+        border-radius: 50%;
+        width: 40px !important;
+        height: 40px;
+        overflow: hidden;
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-left: -10px;
+        }
+
+        &:nth-child(3) {
+          margin-right: 9px;
+        }
+
+        img {
+          width: 42px !important;
+          height: 42px !important;
+          margin: 0;
+          top: 50% !important;
+          left: 50% !important;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    &__img {
+      &__chat {
+        width: 260px;
+      }
+    }
+  }
+}
+
+.animated-number-cont {
+  .vc_column-inner {
+    .wpb_wrapper {
+      img {
+        width: 48px !important;
+        height: auto !important;
+      }
+
+      .nectar-milestone {
+        .number {
+          margin: 0;
+
+          > span {
+            font-size: 28px;
+            line-height: 36px;
+            font-family: $primaryFont;
+            color: $grey4d;
+            font-weight: 700;
+          }
+
+          .symbol-wrap {
+            font-size: 28px !important;
+            line-height: 36px !important;
+
+            .symbol {
+              font-family: $ternaryFont;
+              font-size: 28px;
+              line-height: 36px;
+              font-weight: 400;
+              color: $grey71;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.steps {
+  &__step {
+    &__number {
+      @include respond-to($md) {
+        width: 48px !important;
+        height: 48px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.text {
+  &-pretitle,
+  &-pretitle {
+    font-family: $secondaryFont;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    @include respond-to($md) {
+      font-size: 14px;
+      line-height: 16.41px;
+    }
+  }
+
+  &-title,
+  &-title {
+    font-size: 40px;
+    line-height: 40px;
+    font-family: $primaryFont;
+    font-weight: 600;
+
+    @include respond-to($md) {
+      font-size: 24px;
+      line-height: 29.26px;
+    }
+
+    &-big {
+      font-family: $primaryFont;
+      font-size: 48px;
+      line-height: 58.51px;
+      font-weight: 600;
+
+      @include respond-to($md) {
+        font-size: 32px;
+        line-height: 39.01px;
+      }
+    }
+
+    &-secondary,
+    &-secondary {
+      font-family: $primaryFont;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+
+      @include respond-to($md) {
+        font-size: 24px;
+        line-height: 29.26px;
+      }
+
+      &-small,
+      &-small {
+        font-family: $primaryFont;
+        font-size: 24px;
+        font-weight: 600 !important;
+        line-height: 29.26px;
+
+        @include respond-to($md) {
+          font-size: 18px;
+          line-height: 21.94px;
+        }
+      }
+    }
+
+    &-ternary,
+    &-ternary {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 36.23px;
+
+      @include respond-to($md) {
+        font-size: 24px;
+        line-height: 31.06px;
+      }
+    }
+  }
+
+  &-subtitle,
+  &-subtitle {
+    font-family: $ternaryFont;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+
+    @include respond-to($md) {
+      font-size: 16px;
+      line-height: 18.75px;
+    }
+
+    &-small,
+    &-small {
+      font-family: $ternaryFont;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+
+    &-smaller {
+      font-family: $ternaryFont;
+      font-size: 14px;
+      line-height: 16.41px;
+      font-weight: 400;
+    }
+  }
+}
+
+.fw {
+  &-100 {
+    font-weight: 100 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+
+  &-200 {
+    font-weight: 200 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+
+  &-300 {
+    font-weight: 300 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+
+  &-400 {
+    font-weight: 400 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+
+  &-500 {
+    font-weight: 500 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+
+  &-600 {
+    font-weight: 600 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+
+  &-700 {
+    font-weight: 700 !important;
+
+    strong {
+      font-weight: 700 !important;
+    }
+  }
+}
+
+.ta {
+  &-c {
+    text-align: center;
+
+    &-lg {
+      @include respond-to($lg) {
+        text-align: center;
+      }
+    }
+
+    &-md {
+      @include respond-to($md) {
+        text-align: center;
+      }
+    }
+
+    &-sm {
+      @include respond-to($sm) {
+        text-align: center;
+      }
+    }
+
+    &-smd {
+      @include respond-to($smd) {
+        text-align: center;
+      }
+    }
+
+    &-xs {
+      @include respond-to($xs) {
+        text-align: center;
+      }
+    }
+  }
+
+  &-l {
+    text-align: left;
+
+    &-lg {
+      @include respond-to($lg) {
+        text-align: left;
+      }
+    }
+
+    &-md {
+      @include respond-to($md) {
+        text-align: left;
+      }
+    }
+
+    &-sm {
+      @include respond-to($sm) {
+        text-align: left;
+      }
+    }
+
+    &-smd {
+      @include respond-to($smd) {
+        text-align: left;
+      }
+    }
+
+    &-xs {
+      @include respond-to($xs) {
+        text-align: left;
+      }
+    }
+  }
+}
