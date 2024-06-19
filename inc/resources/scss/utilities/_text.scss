@@ -13,7 +13,7 @@
   }
 
   &-title,
-  &-title {
+  &-title * {
     font-size: 40px;
     line-height: 40px;
     font-family: $primaryFont;
@@ -23,8 +23,11 @@
       font-size: 24px;
       line-height: 29.26px;
     }
+  }
 
-    &-big {
+  &-title {
+    &-big,
+    &-big * {
       font-family: $primaryFont;
       font-size: 48px;
       line-height: 58.51px;
@@ -37,7 +40,7 @@
     }
 
     &-secondary,
-    &-secondary {
+    &-secondary * {
       font-family: $primaryFont;
       font-size: 36px;
       font-weight: 600;
@@ -47,9 +50,24 @@
         font-size: 24px;
         line-height: 29.26px;
       }
+    }
+
+    &-secondary {
+      &-medium,
+      &-medium * {
+        font-family: $primaryFont;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -1.2px;
+
+        @include respond-to($md) {
+          font-size: 18px;
+        }
+      }
 
       &-small,
-      &-small {
+      &-small * {
         font-family: $primaryFont;
         font-size: 24px;
         font-weight: 600 !important;
@@ -63,7 +81,7 @@
     }
 
     &-ternary,
-    &-ternary {
+    &-ternary * {
       font-weight: 400;
       font-size: 28px;
       line-height: 36.23px;
@@ -76,7 +94,7 @@
   }
 
   &-subtitle,
-  &-subtitle {
+  &-subtitle * {
     font-family: $ternaryFont;
     font-weight: 400;
     font-size: 18px;
@@ -86,26 +104,39 @@
       font-size: 16px;
       line-height: 18.75px;
     }
+  }
 
+  &-subtitle {
     &-small,
-    &-small {
+    &-small * {
       font-family: $ternaryFont;
       font-size: 16px;
       line-height: 24px;
       font-weight: 400;
     }
 
-    &-smaller {
+    &-smaller,
+    &-smaller * {
       font-family: $ternaryFont;
       font-size: 14px;
       line-height: 16.41px;
       font-weight: 400;
     }
   }
+
+  &-footer-link,
+  &-footer-link * {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: -0.2px;
+  }
 }
 
 .fw {
-  &-100 {
+  &-100,
+  &-100 * {
     font-weight: 100 !important;
 
     strong {
@@ -113,7 +144,8 @@
     }
   }
 
-  &-200 {
+  &-200,
+  &-200 * {
     font-weight: 200 !important;
 
     strong {
@@ -121,7 +153,8 @@
     }
   }
 
-  &-300 {
+  &-300,
+  &-300 * {
     font-weight: 300 !important;
 
     strong {
@@ -129,7 +162,8 @@
     }
   }
 
-  &-400 {
+  &-400,
+  &-400 * {
     font-weight: 400 !important;
 
     strong {
@@ -137,7 +171,8 @@
     }
   }
 
-  &-500 {
+  &-500,
+  &-500 * {
     font-weight: 500 !important;
 
     strong {
@@ -145,7 +180,8 @@
     }
   }
 
-  &-600 {
+  &-600,
+  &-600 * {
     font-weight: 600 !important;
 
     strong {
@@ -153,7 +189,8 @@
     }
   }
 
-  &-700 {
+  &-700,
+  &-700 * {
     font-weight: 700 !important;
 
     strong {
@@ -229,5 +266,17 @@
         text-align: left;
       }
     }
+  }
+}
+
+.color {
+  &-grey80,
+  &-grey80 * {
+    color: $grey80;
+  }
+
+  &-white,
+  &-white * {
+    color: $white;
   }
 }

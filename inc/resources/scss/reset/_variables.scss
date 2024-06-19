@@ -1,23 +1,34 @@
 $black: #000000;
-$white: #FFFFFF;
+$white: #ffffff;
 
-$grey4d: #4D4D4D;
+$grey4d: #4d4d4d;
 $grey71: #717171;
+$grey80: #808080;
 
-$primaryFont: 'Montserrat', sans-serif;
-$secondaryFont: 'Poppins', sans-serif;
-$ternaryFont: 'Roboto', sans-serif;
+$lightYellow: #fff4e2;
+$lightGreen: #e7fbf9;
+$lightPink: #fde0f6;
+$lightPurple: #c8c4e9;
+$lightViolet: #e0c1f4;
+
+$darkBlue: #002d5d;
+
+$globalTransition: all 0.3s ease-in-out;
+
+$primaryFont: "Montserrat", sans-serif;
+$secondaryFont: "Poppins", sans-serif;
+$ternaryFont: "Roboto", sans-serif;
 
 .primary-font {
-    font-family: $primaryFont !important;
+  font-family: $primaryFont !important;
 }
 
 .secondary-font {
-    font-family: $secondaryFont !important;
+  font-family: $secondaryFont !important;
 }
 
 .ternary-font {
-    font-family: $ternaryFont !important;
+  font-family: $ternaryFont !important;
 }
 
 // Screen sizes

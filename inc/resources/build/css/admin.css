@@ -43,6 +43,17 @@
   margin: 0;
 }
 
+.margin-auto {
+  margin: auto !important;
+}
+.margin-cero {
+  margin: 0 !important;
+}
+
+.padding-cero {
+  padding: 0 !important;
+}
+
 /*--------------------------------------------------------------
 # Vendor
 --------------------------------------------------------------*/
