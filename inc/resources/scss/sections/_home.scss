@@ -2,6 +2,10 @@
   &__hero {
     &__title {
       max-width: 474px;
+
+      @include respond-to($md) {
+        max-width: unset;
+      }
     }
 
     .nectar-text-inline-images {
@@ -340,11 +344,11 @@
     .toggle {
       border-top: 2px solid $darkBlue;
       border-bottom: none;
-      
+
       @include respond-to($md) {
         border-top: 1px solid $darkBlue;
       }
-      
+
       &:last-child {
         border-bottom: 2px solid $darkBlue;
 
