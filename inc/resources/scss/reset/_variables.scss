@@ -1,40 +1,41 @@
 $black: #000000;
-$white: #FFFFFF;
+$white: #ffffff;
 
-$primaryColor: #1B2551;
-$primaryColor300: #7C95EF;
-$primaryColor200: #A7B9F4;
+$grey4d: #4d4d4d;
+$grey71: #717171;
+$grey80: #808080;
 
-$accentColor: #244FE4;
+$lightYellow: #fff4e2;
+$lightGreen: #e7fbf9;
+$lightPink: #fde0f6;
+$lightPurple: #c8c4e9;
+$lightViolet: #e0c1f4;
 
-$secondaryColor: #10DDD2;
-$secondaryColor600: #099F97;
-$secondaryColor500: #0DB1A8;
-$secondaryColor25: #eefaf9;
+$darkBlue: #002d5d;
 
-$neutralColor800: #383838;
-$neutralColor700: #5C5C5C;
-$neutralColor300: #eeeeee;
-$neutralColor200: #F3F3F3;
-$neutralColor50: #fdfdfd;
+$globalTransition: all 0.3s ease-in-out;
 
-$errorColor: #E51D41;
-$successColor: #00955F;
-
-$primaryFont: 'Ubuntu', sans-serif;
-$secondaryFont: 'Montserrat', sans-serif;
+$primaryFont: "Montserrat", sans-serif;
+$secondaryFont: "Poppins", sans-serif;
+$ternaryFont: "Roboto", sans-serif;
 
 .primary-font {
-    font-family: $primaryFont;
+  font-family: $primaryFont !important;
 }
 
 .secondary-font {
-    font-family: $secondaryFont;
+  font-family: $secondaryFont !important;
+}
+
+.ternary-font {
+  font-family: $ternaryFont !important;
 }
 
 // Screen sizes
 // Extra small screen / phone
 $xs: 480px;
+
+$smd: 690px;
 
 // Small screen / tablet
 $sm: 768px;
