@@ -39,6 +39,19 @@
       }
     }
 
+    &-bigger,
+    &-bigger * {
+      font-family: $primaryFont;
+      font-weight: 600;
+      font-size: 80px;
+      line-height: 97.52px;
+
+      @include respond-to($md) {
+        font-size: 32px;
+        line-height: 39.01px;
+      }
+    }
+
     &-secondary,
     &-secondary * {
       font-family: $primaryFont;
@@ -107,6 +120,18 @@
   }
 
   &-subtitle {
+    &-big,
+    &-big * {
+      font-family: $ternaryFont;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+
+      @include respond-to($md) {
+        font-size: 14px;
+      }
+    }
+
     &-small,
     &-small * {
       font-family: $ternaryFont;
@@ -270,13 +295,77 @@
 }
 
 .color {
-  &-grey80,
-  &-grey80 * {
-    color: $grey80;
-  }
-
   &-white,
   &-white * {
     color: $white;
+  }
+
+  &-grey {
+    &49,
+    &49 * {
+      color: $grey49;
+    }
+
+    &E5,
+    &E5 * {
+      color: $greyE5;
+    }
+
+    &80,
+    &80 * {
+      color: $grey80;
+    }
+  }
+}
+
+.load-more {
+  @include respond-to($smd) {
+    background-color: #F5F7FA;
+    padding: 8px;
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  a {
+    font-family: $primaryFont;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #00557e;
+
+    @include respond-to($md) {
+      font-size: 14px;
+      line-height: 17.07px;
+    }
+
+    &.loading {
+      .loading {
+        display: block;
+      }
+
+      .more {
+        display: none;
+      }
+    }
+
+    .loading {
+      display: none;
+    }
+
+    .arrow {
+      transform: rotate(180deg);
+      display: flex;
+      align-items: center;
+
+      svg {
+        path {
+          stroke: #00557e;
+        }
+      }
+    }
   }
 }

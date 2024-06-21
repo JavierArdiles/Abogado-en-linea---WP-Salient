@@ -54,6 +54,35 @@
   padding: 0 !important;
 }
 
+.d-n {
+  display: none !important;
+}
+@media only screen and (max-width: 1200px) {
+  .d-n-lg {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .d-n-md {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .d-n-sm {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .d-n-smd {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .d-n-xs {
+    display: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Vendor
 --------------------------------------------------------------*/
