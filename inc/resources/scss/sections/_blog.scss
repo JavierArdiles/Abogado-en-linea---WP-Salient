@@ -240,7 +240,7 @@
   padding: 16px;
   position: relative;
 
-  @include respond-to($md) {
+  @include respond-to($smd) {
     padding: 0;
     border: none;
   }
@@ -387,6 +387,157 @@
     &:nth-child(3n + 0) {
       color: $orange;
       background-color: $lightOrange;
+    }
+  }
+}
+
+body.single {
+  .ocm-effect-wrap {
+    .ocm-effect-wrap-inner {
+      #ajax-content-wrap {
+        .container-wrap {
+          padding: 0 !important;
+
+          .container {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog-post {
+  &-header {
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(
+        180deg,
+        #000a23 0%,
+        #000a23cc 5%,
+        #153f58cc 40%,
+        #153f58cc 50%,
+        #000a23cc 75%,
+        #000a23 100%
+      );
+      width: 100vw;
+      height: 100%;
+
+      @include respond-to($md) {
+        background: linear-gradient(
+          180deg,
+          #153f58cc 0%,
+          #000a23cc 80%,
+          #000a23 100%
+        );
+      }
+    }
+
+    &__thumbnail-cont {
+      width: 100vw;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      height: 100%;
+      padding: 380px 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      @include respond-to($md) {
+        padding: 110px 0 40px;
+        gap: 8px;
+      }
+    }
+
+    &__categories {
+      justify-content: center;
+    }
+
+    &__meta {
+      margin-top: 8px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .image {
+          width: 36px;
+          height: 36px;
+          display: block;
+          background-image: url(../../images/default-author.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  &-content {
+    padding: 80px 0 120px;
+    max-width: 800px;
+    margin: auto;
+
+    @include respond-to($md) {
+      padding: 40px 20px 56px;
+    }
+  }
+
+  &-related {
+    padding-bottom: 120px;
+
+    @include respond-to($md) {
+      padding-bottom: 100px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .blog-post-preview {
+        flex: 1 0 300px;
+
+        &__text {
+          @include respond-to($md) {
+            height: auto;
+          }
+        }
+
+        &__meta {
+          @include respond-to($md) {
+            align-items: center;
+          }
+
+          .date {
+            padding: 0;
+          }
+        }
+      }
     }
   }
 }
