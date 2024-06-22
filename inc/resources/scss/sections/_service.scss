@@ -1,0 +1,50 @@
+.service-hero-card {
+  max-width: 340px;
+  margin-left: auto;
+
+  .milestone-wrap {
+    .nectar-milestone {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: end;
+
+      .number {
+        margin: 0;
+        font-size: 40px !important;
+        line-height: 48px !important;
+
+        .symbol-wrap {
+          font-size: 40px !important;
+          line-height: 48px !important;
+        }
+      }
+
+      .subject {
+        font-family: $ternaryFont;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28.13px;
+      }
+    }
+  }
+
+  .nectar-fancy-ul {
+    ul {
+      li {
+        font-family: $ternaryFont;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px !important;
+        display: flex;
+        gap: 12px;
+        padding: 0;
+        align-items: center;
+
+        i {
+          position: static;
+        }
+      }
+    }
+  }
+}

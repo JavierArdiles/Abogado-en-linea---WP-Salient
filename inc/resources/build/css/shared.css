@@ -131,6 +131,16 @@ body[data-button-style*=slightly_rounded] button.button-primary {
   z-index: 1;
 }
 
+.w-100 {
+  width: 100%;
+}
+.w-40-px {
+  width: 40px !important;
+}
+.w-44-px {
+  width: 44px !important;
+}
+
 .text-pretitle, .text-pretitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -267,6 +277,12 @@ body[data-button-style*=slightly_rounded] button.button-primary {
   font-size: 17px;
   line-height: 40px;
   letter-spacing: -0.2px;
+}
+.text-body, .text-body * {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
 }
 
 .fw-100, .fw-100 * {
@@ -1342,6 +1358,45 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
   .faqs .toggles .toggle > div .inner-toggle-wrap {
     padding-bottom: 12px !important;
   }
+}
+
+.service-hero-card {
+  max-width: 340px;
+  margin-left: auto;
+}
+.service-hero-card .milestone-wrap .nectar-milestone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+}
+.service-hero-card .milestone-wrap .nectar-milestone .number {
+  margin: 0;
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+.service-hero-card .milestone-wrap .nectar-milestone .number .symbol-wrap {
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+.service-hero-card .milestone-wrap .nectar-milestone .subject {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+.service-hero-card .nectar-fancy-ul ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px !important;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  align-items: center;
+}
+.service-hero-card .nectar-fancy-ul ul li i {
+  position: static;
 }
 
 /*--------------------------------------------------------------

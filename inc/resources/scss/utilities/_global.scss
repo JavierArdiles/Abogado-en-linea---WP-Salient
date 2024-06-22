@@ -92,3 +92,17 @@
     z-index: 1;
   }
 }
+
+.w {
+  &-100 {
+    width: 100%;
+  }
+
+  &-40-px {
+    width: 40px !important;
+  }
+
+  &-44-px {
+    width: 44px !important;
+  }
+}
