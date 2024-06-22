@@ -943,7 +943,10 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
 }
 .menu-item.contact-link a .menu-title-text::after,
 .menu-item.contact-link a .wrap::after {
-  display: none;
+  display: none !important;
+}
+.menu-item a .menu-title-text::after {
+  bottom: -8px !important;
 }
 
 #slide-out-widget-area .inner-wrap {

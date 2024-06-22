@@ -19,8 +19,16 @@
         color: $white;
 
         &::after {
-          display: none;
+          display: none !important;
         }
+      }
+    }
+  }
+
+  a {
+    .menu-title-text {
+      &::after {
+        bottom: -8px !important;
       }
     }
   }
