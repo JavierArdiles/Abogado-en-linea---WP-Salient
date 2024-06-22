@@ -1318,7 +1318,7 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
   }
 }
 .faqs .faqs__narrow .toggles {
-  border-top: 1px solid #A1B5CA;
+  border-top: 1px solid #a1b5ca;
 }
 @media only screen and (max-width: 1000px) {
   .faqs .faqs__narrow .toggles {
@@ -1330,16 +1330,6 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
 }
 .faqs .faqs__narrow .toggles .toggle:last-child {
   border: none;
-}
-@media only screen and (max-width: 1000px) {
-  .faqs .faqs__narrow .toggles .toggle .toggle-title {
-    padding-right: 24px;
-  }
-}
-@media only screen and (max-width: 690px) {
-  .faqs .faqs__narrow .toggles .toggle .toggle-title {
-    padding-right: 32px;
-  }
 }
 .faqs .faqs__narrow .toggles .toggle .toggle-title .toggle-heading {
   padding: 17px 0;
@@ -1368,6 +1358,16 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
 }
 .faqs .toggles .toggle.open .toggle-title .toggle-heading::after {
   transform: translateY(-50%) rotate(180deg);
+}
+@media only screen and (max-width: 1000px) {
+  .faqs .toggles .toggle .toggle-title {
+    padding-right: 24px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .faqs .toggles .toggle .toggle-title {
+    padding-right: 32px;
+  }
 }
 .faqs .toggles .toggle .toggle-title .toggle-heading {
   font-family: "Montserrat", sans-serif;
