@@ -340,6 +340,50 @@
 }
 
 .faqs {
+  .faqs__narrow {
+    max-width: 743px;
+
+    .faqs__title {
+      @include respond-to($md) {
+        padding: 0 16px;
+      }
+    }
+
+    .toggles {
+      border-top: 1px solid #A1B5CA;
+
+      @include respond-to($md) {
+        padding: 0 16px;
+      }
+
+      .toggle {
+        border: none;
+
+        &:last-child {
+          border: none;
+        }
+
+        .toggle-title {
+          @include respond-to($md) {
+            padding-right: 24px;
+          }
+
+          @include respond-to($smd) {
+            padding-right: 32px;
+          }
+
+          .toggle-heading {
+            padding: 17px 0;
+
+            @include respond-to($md) {
+              padding: 12px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .toggles {
     .toggle {
       border-top: 2px solid $darkBlue;

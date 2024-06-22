@@ -213,6 +213,11 @@ body[data-button-style*=slightly_rounded] button.button-primary {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .text-title-secondary-medium-bg-md {
+    font-size: 24px;
+  }
+}
 .text-title-secondary-small, .text-title-secondary-small * {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -283,6 +288,12 @@ body[data-button-style*=slightly_rounded] button.button-primary {
   font-weight: 400;
   font-size: 16px;
   line-height: 18.75px;
+}
+.text-body-small, .text-body-small * {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.09px;
 }
 
 .fw-100, .fw-100 * {
@@ -1295,6 +1306,46 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
   display: none;
 }
 
+.faqs .faqs__narrow {
+  max-width: 743px;
+}
+@media only screen and (max-width: 1000px) {
+  .faqs .faqs__narrow .faqs__title {
+    padding: 0 16px;
+  }
+}
+.faqs .faqs__narrow .toggles {
+  border-top: 1px solid #A1B5CA;
+}
+@media only screen and (max-width: 1000px) {
+  .faqs .faqs__narrow .toggles {
+    padding: 0 16px;
+  }
+}
+.faqs .faqs__narrow .toggles .toggle {
+  border: none;
+}
+.faqs .faqs__narrow .toggles .toggle:last-child {
+  border: none;
+}
+@media only screen and (max-width: 1000px) {
+  .faqs .faqs__narrow .toggles .toggle .toggle-title {
+    padding-right: 24px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .faqs .faqs__narrow .toggles .toggle .toggle-title {
+    padding-right: 32px;
+  }
+}
+.faqs .faqs__narrow .toggles .toggle .toggle-title .toggle-heading {
+  padding: 17px 0;
+}
+@media only screen and (max-width: 1000px) {
+  .faqs .faqs__narrow .toggles .toggle .toggle-title .toggle-heading {
+    padding: 12px 0;
+  }
+}
 .faqs .toggles .toggle {
   border-top: 2px solid #002d5d;
   border-bottom: none;
