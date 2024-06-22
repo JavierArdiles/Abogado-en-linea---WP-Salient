@@ -79,6 +79,14 @@
         }
       }
 
+      &-medium {
+        &-bg-md {
+          @include respond-to($md) {
+            font-size: 24px;
+          }
+        }
+      }
+
       &-small,
       &-small * {
         font-family: $primaryFont;
@@ -164,6 +172,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18.75px;
+  }
+
+  &-body {
+    &-small,
+    &-small * {
+      font-family: $ternaryFont;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21.09px;
+    }
   }
 }
 
