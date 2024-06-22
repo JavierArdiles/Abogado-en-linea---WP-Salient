@@ -157,6 +157,14 @@
     line-height: 40px;
     letter-spacing: -0.2px;
   }
+
+  &-body,
+  &-body * {
+    font-family: $ternaryFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+  }
 }
 
 .fw {
