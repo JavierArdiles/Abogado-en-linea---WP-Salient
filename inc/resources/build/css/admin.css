@@ -110,8 +110,11 @@
   z-index: 1;
 }
 
+.w-auto {
+  width: auto;
+}
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 .w-40-px {
   width: 40px !important;

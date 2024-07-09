@@ -131,8 +131,11 @@ body[data-button-style*=slightly_rounded] button.button-primary {
   z-index: 1;
 }
 
+.w-auto {
+  width: auto;
+}
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 .w-40-px {
   width: 40px !important;
@@ -1115,6 +1118,20 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
     height: 48px !important;
   }
 }
+.steps__text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.steps__text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
 
 .branches__branch--bottom {
   border-bottom: 1px solid #dddddd;
@@ -1451,6 +1468,15 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
 }
 .service-hero-card .nectar-fancy-ul ul li i {
   position: static;
+}
+
+.why__bullets__bullet__title {
+  white-space: nowrap;
+}
+@media only screen and (max-width: 1200px) {
+  .why__bullets__bullet__title {
+    white-space: normal;
+  }
 }
 
 /*--------------------------------------------------------------
