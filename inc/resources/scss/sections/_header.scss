@@ -1,0 +1,133 @@
+.menu-item {
+  &.contact-link {
+    a {
+      margin-left: 24px !important;
+
+      .menu-title-text,
+      .wrap {
+        background-color: $lightBlue;
+        padding: 8px 24px !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 4px;
+        font-family: $primaryFont;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21.94px;
+        color: $white;
+
+        &::after {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  a {
+    .menu-title-text {
+      &::after {
+        bottom: -8px !important;
+      }
+    }
+  }
+}
+
+#slide-out-widget-area {
+  .inner-wrap {
+    padding-top: 146px !important;
+
+    @include respond-to($smd) {
+      padding-top: 106px !important;
+    }
+
+    .inner {
+      border-top: 1px solid #567997;
+      flex: 1;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+
+      .off-canvas-menu-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        margin: auto;
+        max-width: 620px;
+        width: 100%;
+
+        @include respond-to($smd) {
+          max-width: 460px;
+        }
+
+        @include respond-to($xs) {
+          max-width: 360px;
+        }
+
+        .menu-wrap {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          .menu {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: start;
+
+            .menu-item {
+              &:nth-last-child(2),
+              &.contact-link {
+                a {
+                  .wrap {
+                    border: none;
+                  }
+                }
+              }
+
+              &.contact-link {
+                margin: auto auto 0;
+
+                a {
+                  margin: 0 !important;
+
+                  .wrap {
+                    flex-direction: row-reverse;
+                    padding: 12px 24px !important;
+                    gap: 5px;
+
+                    &::before {
+                      content: " tu problema";
+                    }
+                  }
+                }
+              }
+
+              a {
+                margin: 0;
+                width: 100%;
+                padding: 0;
+
+                .wrap {
+                  padding: 10px 0 18px;
+                  border-bottom: 1px solid $white;
+                  font-family: $ternaryFont;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 18.75px;
+
+                  &::after {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

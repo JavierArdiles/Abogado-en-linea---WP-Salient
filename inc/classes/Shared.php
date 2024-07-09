@@ -13,6 +13,8 @@ class Shared extends AbstractBase
 {
 	private $assetsPath;
 
+	const NONCE = '_ajax_clazzy_nonce';
+
 	protected function init(): void
 	{
 		$this->assetsPath = CHILD_THEME_URI . '/inc/resources/dist/';
@@ -70,6 +72,15 @@ class Shared extends AbstractBase
 			[],
 			$this->getVersion(),
 			true
+		);
+
+		wp_localize_script(
+			$this->getAssetHandle('child-script-shared'),
+			'localize',
+			[
+				'_ajax_url'   => admin_url('admin-ajax.php'),
+				'_ajax_nonce' => wp_create_nonce(self::NONCE),
+			]
 		);
 	}
 
