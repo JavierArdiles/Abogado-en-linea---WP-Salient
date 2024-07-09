@@ -94,8 +94,12 @@
 }
 
 .w {
+  &-auto {
+    width: auto;
+  }
+
   &-100 {
-    width: 100%;
+    width: 100% !important;
   }
 
   &-40-px {

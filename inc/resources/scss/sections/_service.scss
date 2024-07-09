@@ -48,3 +48,17 @@
     }
   }
 }
+
+.why {
+  &__bullets {
+    &__bullet {
+      &__title {
+        white-space: nowrap;
+
+        @include respond-to($lg) {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
