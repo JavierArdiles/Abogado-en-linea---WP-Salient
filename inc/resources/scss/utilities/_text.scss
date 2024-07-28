@@ -76,6 +76,7 @@
 
         @include respond-to($md) {
           font-size: 18px;
+          line-height: 29.26px;
         }
       }
 

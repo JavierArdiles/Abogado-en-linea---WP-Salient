@@ -2,4 +2,19 @@
   &__mob-logo {
     max-width: 156px !important;
   }
+
+  &__top-row-desktop {
+    &__button-col {
+      .vc_column-inner {
+        .wpb_wrapper {
+          width: fit-content;
+          margin-left: auto;
+
+          @include respond-to($md) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

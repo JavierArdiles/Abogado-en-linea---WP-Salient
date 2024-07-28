@@ -214,6 +214,7 @@ body[data-button-style*=slightly_rounded] button.button-primary {
 @media only screen and (max-width: 1000px) {
   .text-title-secondary-medium, .text-title-secondary-medium * {
     font-size: 18px;
+    line-height: 29.26px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -925,6 +926,15 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
 .footer__mob-logo {
   max-width: 156px !important;
 }
+.footer__top-row-desktop__button-col .vc_column-inner .wpb_wrapper {
+  width: fit-content;
+  margin-left: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .footer__top-row-desktop__button-col .vc_column-inner .wpb_wrapper {
+    width: 100%;
+  }
+}
 
 .menu-item.contact-link a {
   margin-left: 24px !important;
@@ -1086,9 +1096,27 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
   width: 260px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .animated-number-cont .vc_column-inner .wpb_wrapper {
+    width: 196px;
+    margin: auto;
+    gap: 16px !important;
+    justify-content: space-between !important;
+  }
+}
+.animated-number-cont .vc_column-inner .wpb_wrapper .img-with-aniamtion-wrap {
+  width: 48px !important;
+  max-width: 48px !important;
+  min-width: 48px !important;
+}
 .animated-number-cont .vc_column-inner .wpb_wrapper img {
   width: 48px !important;
   height: auto !important;
+}
+@media only screen and (max-width: 1000px) {
+  .animated-number-cont .vc_column-inner .wpb_wrapper .nectar-milestone {
+    flex: 1;
+  }
 }
 .animated-number-cont .vc_column-inner .wpb_wrapper .nectar-milestone .number {
   margin: 0;
@@ -1184,6 +1212,11 @@ body.single .ocm-effect-wrap .ocm-effect-wrap-inner #ajax-content-wrap .containe
     scroll-snap-type: x mandatory;
     scroll-padding: 10px;
     padding: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .testimonials .testimonial_slider .slides .flickity-viewport .flickity-slider::-webkit-scrollbar {
+    display: none;
   }
 }
 .testimonials .testimonial_slider .slides .flickity-viewport .flickity-slider blockquote {
