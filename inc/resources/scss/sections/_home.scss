@@ -69,12 +69,29 @@
 .animated-number-cont {
   .vc_column-inner {
     .wpb_wrapper {
+      @include respond-to($md) {
+        width: 196px;
+        margin: auto;
+        gap: 16px !important;
+        justify-content: space-between !important;
+      }
+
+      .img-with-aniamtion-wrap {
+        width: 48px !important;
+        max-width: 48px !important;
+        min-width: 48px !important;
+      }
+
       img {
         width: 48px !important;
         height: auto !important;
       }
 
       .nectar-milestone {
+        @include respond-to($md) {
+          flex: 1;
+        }
+
         .number {
           margin: 0;
 
@@ -197,6 +214,12 @@
             scroll-snap-type: x mandatory;
             scroll-padding: 10px;
             padding: 10px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
           }
 
           blockquote {
