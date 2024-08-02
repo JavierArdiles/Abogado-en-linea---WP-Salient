@@ -17,4 +17,56 @@
       }
     }
   }
+
+  &__title {
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -1.2px;
+
+    @include respond-to($md) {
+      font-size: 24px;
+      line-height: 29.26px;
+      text-align: center;
+    }
+  }
+
+  &__menu {
+    max-width: 298px;
+    margin-left: auto;
+
+    @include respond-to($md) {
+      max-width: unset;
+    }
+
+    .widget_nav_menu {
+      .menu-menu-footer-container {
+        .menu {
+          margin: 0;
+
+          @include respond-to($md) {
+            text-align: center;
+          }
+
+          .menu-item {
+            list-style: none;
+
+            a {
+              font-family: $primaryFont;
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 40px;
+              letter-spacing: -0.2px;
+              color: $white;
+
+              &:hover {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

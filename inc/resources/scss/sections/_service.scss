@@ -61,4 +61,30 @@
       }
     }
   }
+
+  .flickity-page-dots {
+    bottom: -9px !important;
+    display: none;
+
+    @include respond-to($md) {
+      display: block;
+    }
+
+    .dot {
+      &::before {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50% !important;
+        background-color: #d9d9d9 !important;
+        box-shadow: none !important;
+      }
+
+      &.is-selected {
+        &::before {
+          background-color: #002d5d !important;
+          transform: unset !important;
+        }
+      }
+    }
+  }
 }
