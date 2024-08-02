@@ -1,7 +1,7 @@
 <?php
 
 define('CHILD_THEME_NAME', 'Salient');
-define('CHILD_THEME_VERSION', '1.1.3');
+define('CHILD_THEME_VERSION', '1.1.4');
 define('CHILD_THEME_URI', get_stylesheet_directory_uri());
 define('CHILD_THEME_PATH', __DIR__ . DIRECTORY_SEPARATOR);
 
